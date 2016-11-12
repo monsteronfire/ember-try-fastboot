@@ -1,5 +1,12 @@
+// Vendors
 @import "bootstrap";
 
-body {
-  background-color: red;
-}
+// Components
+@import "components/main-footer";
+@import "components/main-nav-bar";
+@import "components/main-sidebar";
+@import "components/profile-card";
+@import "components/search-bar";
+@import "components/sidebar-link";
+@import "components/sidebar-menu";
+@import "components/world-map";
