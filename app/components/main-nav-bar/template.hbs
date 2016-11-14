@@ -3,16 +3,14 @@
 
   {{toggle-button}}
 
-  <nav class="navbar" role="navigation">
-    <div class="navbar-custom-menu">
-      <ul class="nav navbar-nav">
-        <li class="dropdown notifications-menu">
-          {{notification-dropdown}}
-        </li>
-        <li class="dropdown user user-menu">
-          {{profile-dropdown}}
-        </li>
-      </ul>
+  <nav class="right-navbar">
+    <div class="navbar-dropdown-wrapper">
+      <div class="dropdown notifications-menu">
+        {{notification-dropdown}}
+      </div>
+      <div class="dropdown profile-menu">
+        {{profile-dropdown}}
+      </div>
     </div>
   </nav>
 </header>

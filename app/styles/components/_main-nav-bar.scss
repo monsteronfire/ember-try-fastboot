@@ -1,5 +1,6 @@
 header {
   display: flex;
+  flex-direction: row;
   height: $navbar-height;
   background-color: $tly-pink;
 
@@ -8,7 +9,7 @@ header {
   }
 }
 
-.navbar {
+.right-navbar {
   background-color: $tly-pink;
   align-self: flex-end;
 }
