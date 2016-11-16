@@ -1,3 +1,12 @@
 <!--The sidebar title should be passed in as a component option type thing, you know.-->
-<label>Sidebar title</label>
-{{sidebar-link}}
+<div class="sidebar-menu-block">
+  <label>Sidebar title</label>
+  <ul>
+    <li>
+      {{#link-to 'index'}}
+        <i class="fa fa-files-o"></i>
+        <span>Layout Options</span>
+      {{/link-to}}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,11 @@
+.sidebar-menu-block {
+  label {
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: darken($tly-pink, 20%);
+  }
+}
