@@ -10,30 +10,30 @@ header {
 }
 
 .right-navbar {
-  background-color: $tly-pink;
   align-self: flex-end;
   margin-right: 25px;
   margin-left: auto;
+  background-color: $tly-pink;
   line-height: $navbar-height;
 }
 
 .logo {
-  color: white;
-  background-color: $tly-dark-pink;
   display: block;
+  width: 230px;
   height: $navbar-height;
+  padding: 0 15px;
+  background-color: $tly-dark-pink;
+  color: white;
+  font-family: $body-font;
+  font-weight: 300;
   font-size: 20px;
   line-height: $navbar-height;
   text-align: center;
-  width: 230px;
-  font-family: $body-font;
-  padding: 0 15px;
-  font-weight: 300;
 }
 
 .sidebar-toggle {
-  background-color: transparent;
   padding: 15px;
+  background-color: transparent;
   color: white;
   font-family: fontAwesome;
   line-height: $navbar-height;
