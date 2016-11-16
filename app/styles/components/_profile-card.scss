@@ -1,0 +1,39 @@
+.user-profile {
+  display: flex;
+
+  p {
+    margin: 0px;
+  }
+
+  .image > img {
+    width: 100%;
+  }
+}
+
+.profile-menu {
+  .user-profile {
+    .image {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.main-sidebar {
+  .user-profile {
+    padding: 10px;
+
+    .image {
+      width: $sidebar-user-profile-height;
+      height: $sidebar-user-profile-height;
+      margin-right: 10px;
+    }
+
+    .info {
+      color: white;
+      font-weight: bold;
+      line-height: $sidebar-user-profile-height;
+    }
+  }
+}

@@ -12,15 +12,18 @@ header {
 .right-navbar {
   background-color: $tly-pink;
   align-self: flex-end;
+  margin-right: 25px;
+  margin-left: auto;
+  line-height: $navbar-height;
 }
 
 .logo {
   color: white;
   background-color: $tly-dark-pink;
   display: block;
-  height: 50px;
+  height: $navbar-height;
   font-size: 20px;
-  line-height: 50px;
+  line-height: $navbar-height;
   text-align: center;
   width: 230px;
   font-family: $body-font;
@@ -29,30 +32,58 @@ header {
 }
 
 .sidebar-toggle {
-  color: white;
   background-color: transparent;
-  background-image: none;
   padding: 15px;
+  color: white;
   font-family: fontAwesome;
+  line-height: $navbar-height;
+
+  &:before {
+    content: "\f0c9";
+  }
 }
 
-.sidebar-toggle:before {
-  content: "\f0c9";
+/*
+ * Notification Dropdowns
+ */
+.navbar-dropdown-wrapper {
+  .dropdown {
+    display: inline-block;
+
+    &:hover {
+      background-color: $tly-dark-pink;
+    }
+  }
+
+  .dropdown-toggle {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
-.navbar {
-  margin-bottom: 0;
-  border: none;
-  min-height: 50px;
-  border-radius: 0;
-}
-
-.navbar-custom-menu, .navbar-right {
-  margin-right: 5px;
+.notifications-menu,
+.profile-menu {
+  .dropdown-menu {
+    border-radius: 0px;
+  }
 }
 
 .notifications-menu {
 
+}
+
+.profile-menu {
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
 }
 
 .user-image {
@@ -60,5 +91,4 @@ header {
   height: 25px;
   border-radius: 50%;
   margin-right: 10px;
-  margin-top: -2px;
 }
